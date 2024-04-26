@@ -45,57 +45,48 @@ public void CAccount()
 	buttonclick.click();
 	
 }
-public void CreateAcwithnumber()
-{
-	nam.sendKeys("Ajink567");	
-	lnam.sendKeys("Lond89");
-	emai.sendKeys("ajinkyaal.a9@gmail.com");
-	pass.sendKeys("Ajinkya@123");
-	
-	Cpass.sendKeys("Ajinkya@123");
-	buttonclick.click();
-	
-}
+
+
 public void InvalidMail()
 {
-	nam.sendKeys("Ajink567");	
-	lnam.sendKeys("Lond89");
-	emai.sendKeys("ajinkyaal.a9");
-	pass.sendKeys("Ajinkya@123");
+	nam.sendKeys("vaishali12");	
+	lnam.sendKeys("ambekar");
+	emai.sendKeys("ambekarvaishlai@03");
+	pass.sendKeys("ambkear@789");
 	
-	Cpass.sendKeys("Ajinkya@123");
+	Cpass.sendKeys("ambekar@3");
 	buttonclick.click();
 }
 
 public void Diffpasswrd()
 {
-	nam.sendKeys("Ajinkya");	
-	lnam.sendKeys("Londhe");
-	emai.sendKeys("ajinkyaal.a9@gmail.com");
-	pass.sendKeys("Ajinkya@123");
+	nam.sendKeys("vaishali");	
+	lnam.sendKeys("ambekar");
+	emai.sendKeys("vaishaliambekar62@gmail.com");
+	pass.sendKeys("malhar@23");
 	
-	Cpass.sendKeys("Ajinkya@567");
+	Cpass.sendKeys("malhar@23");
 	buttonclick.click();
 }
 public void lessStrongPass()
 {
-	nam.sendKeys("Ajinkya");	
-	lnam.sendKeys("Londhe");
-	emai.sendKeys("ajinkyaal.a9@gmail.com");
-	pass.sendKeys("A123");
+	nam.sendKeys("vaishali");	
+	lnam.sendKeys("ambekar");
+	emai.sendKeys("ambekarvaishali@gmail.com");
+	pass.sendKeys("ambekar");
 	
-	Cpass.sendKeys("A123");
+	Cpass.sendKeys("ambekar");
 	buttonclick.click();
 }
 
 public WebElement Accbutton()
 {
-	nam.sendKeys("Ajinkya");	
-	lnam.sendKeys("Londhe");
-	emai.sendKeys("ajinkyaal.a9@gmail.com");
-	pass.sendKeys("Ajinkya@123");
+	nam.sendKeys("vaishali");	
+	lnam.sendKeys("ambekar");
+	emai.sendKeys("vaishaliambekar62@gmail.com");
+	pass.sendKeys("vaishali789");
 	
-	Cpass.sendKeys("Ajinkya@123");
+	Cpass.sendKeys("vaishali789");
 	return driver.findElement(By.linkText("Create an Account"));
 	
 }
