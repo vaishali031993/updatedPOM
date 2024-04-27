@@ -24,7 +24,7 @@ public class testsearch {
 
     @Test
     public void testValidSearchQuery() {
-        String searchQuery = "shirt";
+        String searchQuery = "kurta";
         homePage.searchProduct(searchQuery);
         assertTrue(searchResultsPage.areResultsDisplayed());
         assertTrue(searchResultsPage.areResultsRelevant(searchQuery));
@@ -41,8 +41,8 @@ public class testsearch {
     public void testAdvancedSearchOptions() {
         String searchQuery = "shoes";
         homePage.searchProduct(searchQuery);
-        searchResultsPage.filterByPrice("100", "200");
-        assertTrue(searchResultsPage.areResultsFilteredByPrice("100", "200"));
+        searchResultsPage.filterByPrice("500", "1000");
+        assertTrue(searchResultsPage.areResultsFilteredByPrice("500", "1000"));
     }
 
     @After
