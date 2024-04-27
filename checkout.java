@@ -68,12 +68,12 @@ import org.testng.Assert;
 
 
 		utils.waitForElementPresent(driver, EmailAdd, Duration.ofSeconds(20));
-		EmailAdd.sendKeys("Ramdas12@gmail.com");
+		EmailAdd.sendKeys("vaishali62@gmail.com");
 		utils.waitForElementPresent(driver, Password, Duration.ofSeconds(20));
 		Password.sendKeys(prop.getProperty("password"));
 		loginBtn.click();
 		utils.waitForElementPresent(driver,ShippingAdd , Duration.ofSeconds(20));
-		System.out.println("hh");
+		System.out.println("vaishali");
 		Assert.assertTrue(ShippingAdd.isEnabled());
 		NextBtn.click();
 		Assert.assertTrue(BillingShippingAddCheckBox.isSelected());
